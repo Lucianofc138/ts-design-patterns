@@ -1,0 +1,25 @@
+{
+  "name": "ts-design-patterns",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Lucianofc138/ts-design-patterns.git",
+  "author": "Lucianofc138 <lucianofc138@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "echo DEV"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^29.0.3",
+    "prettier": "2.7.1",
+    "ts-jest": "^29.0.2",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  }
+}

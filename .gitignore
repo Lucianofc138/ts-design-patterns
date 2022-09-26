@@ -1,0 +1,4 @@
+# IDE or text editor files
+.idea
+#
+node_modules
