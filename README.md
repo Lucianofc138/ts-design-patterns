@@ -2,6 +2,18 @@
 
 Playground to learn and practice design patterns with typescript.
 
+## Install
+
+Install project dependencies:
+```bash
+  yarn 
+```
+
+## Run all test
+```bash
+  yarn test
+```
+
 ## What's a design pattern
 
 A design pattern is the re-usable form of a solution to a design problem. They are specifically made for OOP and since
@@ -24,6 +36,10 @@ different kinds of classes, but these classes always have to follow the same int
 
 **Examples**:
 1. **Mario Bros. enemy factory**: this example is based on a [video from BettaTech](https://youtu.be/lLvYAzXO7Ek).
+Run example demonstration with:
+```bash
+  yarn creational:factory1
+```
 2. ...
 
 ## Structural patterns

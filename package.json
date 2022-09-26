@@ -6,7 +6,9 @@
   "author": "Lucianofc138 <lucianofc138@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "echo DEV"
+    "dev": "echo DEV",
+    "creational:factory1": "ts-node src/creational/factory/1-enemy-factory-example.ts",
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^29.0.3",
