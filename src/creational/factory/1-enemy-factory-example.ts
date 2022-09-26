@@ -1,24 +1,32 @@
 export interface Enemy {
   speed: number;
+  name: string;
 }
 
 export class Boo implements Enemy {
   speed = 2;
+  name = "Boo";
+  
 }
 
 export class Koopa implements Enemy {
   speed = 3;
-  
+  name = "Koopa";
 }
 
 export class Goomba implements Enemy {
   speed = 2;
+  name = "Goomba";
 }
 
 export interface EnemyFactory {
   createEnemy(): Enemy;
 }
 
+/**
+ * Creates enemies with evenly distributed probabilities between Boo,
+ * Koopa and Goomba.
+ */
 export class BasicEnemyFactory implements EnemyFactory {
   createEnemy(): Enemy {
     const r: number = Math.random();
@@ -26,6 +34,10 @@ export class BasicEnemyFactory implements EnemyFactory {
   }
 }
 
+/**
+ * Creates enemies with specific probabilities for each enemy,
+ * given an array of <EnemyGetterWithProbability>.
+ */
 export  class SpecificEnemyFactory implements EnemyFactory {
   constructor(
     readonly enemiesProbabilities: Array<EnemyGetterWithProbability>
