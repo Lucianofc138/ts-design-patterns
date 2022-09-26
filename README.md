@@ -11,7 +11,7 @@ some kind of classes diagram, as it could be a UML diagram.
 ## Types of design patterns
 
 * **Creational**: their main purpose is to create classes or objects, which are the 2 subcategories that usually organize
-this design pattern (Class-creational and object-creational). Examples: [*Factory*](##factory)
+this design pattern (Class-creational and object-creational). Examples: [*Factory*](#factory)
 * **Structural**: these patterns organize classes and object in order to achieve bigger structures and get new 
 functionalities.
 * **Behavioral**: these abstract different patterns of communication between objects.
