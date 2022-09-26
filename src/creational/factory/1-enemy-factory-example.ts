@@ -1,32 +1,32 @@
-interface Enemy {
+export interface Enemy {
   speed: number;
 }
 
-class Boo implements Enemy {
+export class Boo implements Enemy {
   speed = 2;
 }
 
-class Koopa implements Enemy {
+export class Koopa implements Enemy {
   speed = 3;
   
 }
 
-class Goomba implements Enemy {
+export class Goomba implements Enemy {
   speed = 2;
 }
 
-interface EnemyFactory {
+export interface EnemyFactory {
   createEnemy(): Enemy;
 }
 
-class BasicEnemyFactory implements EnemyFactory {
+export class BasicEnemyFactory implements EnemyFactory {
   createEnemy(): Enemy {
     const r: number = Math.random();
     return r < 1 / 3 ? new Boo() : r < 2 / 3 ? new Koopa() : new Goomba();
   }
 }
 
-class SpecificEnemyFactory implements EnemyFactory {
+export  class SpecificEnemyFactory implements EnemyFactory {
   constructor(
     readonly enemiesProbabilities: Array<EnemyGetterWithProbability>
   ) {}
@@ -62,7 +62,7 @@ class SpecificEnemyFactory implements EnemyFactory {
   }
 }
 
-interface EnemyGetterWithProbability {
+export interface EnemyGetterWithProbability {
   getInstance: () => Enemy;
   value: number;
 }
